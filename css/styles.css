@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'alexa' ;
+    src: url(../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(3, 31, 0);
+    font-family: 'alexa';
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    margin-top: 50px;
+    color: #ffffff;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: rgba(144, 211, 148, 0);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 17px;
+    
+  }
+    
+  li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: all cubic-bezier(0.86, 0.41, 0, 1) 0.3s;
+    border-radius: 5px;
+  }
+  
+  li a:hover {
+    display: block;
+    color: #40ff56;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #396143;
+    border-radius: 30px;
+  }
+
+  .image{
+
+    display: flex;
+    justify-content: center;
+  }
+
+  h1{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    margin-top: 50px;
+  }
+  p{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+    margin-top: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  footer {
+    width: 100%;
+    margin:auto;
+    text-align: center;
+    height: 150px;
+    margin-top: 100px;
+    background-color: #33333300;
+    color: #fff;
+    line-height: 150px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 4px;
+}
+
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
