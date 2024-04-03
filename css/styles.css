@@ -3,49 +3,74 @@
     src: url(../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
 }
 
+:root {
+  --groen: #031f00;
+  --wit: #fff;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* border: red solid 1px; */
 }
 
 body {
-    background-color: rgb(3, 31, 0);
-    font-family: 'alexa';
+    background-color: var(--groen);
+    font-family: alexa, Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.blob{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 50vw;
+  height: 50vw;
+  border-radius: 6898698689896px;
+  background: url(../images/blob.png);
+  -webkit-filter: blur(20vw);
+  filter: blur(20vw);
+  margin: -25vw;
+  z-index: 99901;
+  
 }
 
 header{
     display: flex;
     justify-content: center;
-    height: 100px;
     margin-top: 50px;
-    color: #ffffff;
+    margin-bottom: 20px;
+    color: var(--wit);
 }
 
 ul {
+  position: relative;
     list-style-type: none;
     margin: 0;
+    margin-bottom: 50px;
     overflow: hidden;
-    background-color: rgba(144, 211, 148, 0);
+    background-color: #90d39400;
     border: 1px solid transparent;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    z-index: 0;
   }
   
   li {
     display: flex;
-    justify-content: space-between;
-    padding: 0px 17px;
+    justify-content: space-around;
+    padding: 0px 1vw;
     
   }
     
   li a {
     display: block;
-    color: #ffffff;
+    color: var(--wit);
     text-align: center;
-    padding: 14px 16px;
+    padding: 1vw 1.5vw;
     text-decoration: none;
     transition: all cubic-bezier(0.86, 0.41, 0, 1) 0.3s;
     border-radius: 5px;
@@ -54,7 +79,7 @@ ul {
   li a:hover {
     display: block;
     color: #40ff56;
-    padding: 14px 16px;
+    padding: 1vw 1.5vw;
     text-decoration: none;
     background-color: #396143;
     border-radius: 30px;
@@ -66,19 +91,29 @@ ul {
     justify-content: center;
   }
 
+  nav{
+    position: sticky;
+    top: 0;
+    background-color: var(--groen);
+  }
+
   h1{
-    color: #ffffff;
+    color: var(--wit);
     display: flex;
     justify-content: center;
-    height: 100px;
+    font-size: 5vw;
     margin-top: 50px;
   }
+
+  h2{
+    font-size: 10vw;
+  }
+
   p{
-    color: #ffffff;
+    color: var(--wit);
     display: flex;
     justify-content: center;
     text-align: center;
-    height: 100px;
     margin-top: 5px;
     margin-left: 50px;
     margin-right: 50px;
@@ -88,12 +123,11 @@ ul {
     width: 100%;
     margin:auto;
     text-align: center;
-    height: 150px;
-    margin-top: 100px;
+    margin-top: 10px;
+    bottom: 0;
     background-color: #33333300;
-    color: #fff;
-    line-height: 150px;
-}
+    color: var(--wit);
+  }
 
 .row {
   display: flex;
