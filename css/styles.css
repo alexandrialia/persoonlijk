@@ -4,7 +4,7 @@
 }
 
 :root {
-  --groen: #031f00;
+  --groen: #62003c;
   --wit: #fff;
 }
 
@@ -78,10 +78,10 @@ ul {
   
   li a:hover {
     display: block;
-    color: #40ff56;
+    color: #ffc1e7;
     padding: 1vw 1.5vw;
     text-decoration: none;
-    background-color: #396143;
+    background-color: #97005d;
     border-radius: 30px;
   }
 
