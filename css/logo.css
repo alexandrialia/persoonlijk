@@ -16,7 +16,8 @@
 }
 
 body {
-    background-color: var(--groen);
+    background: linear-gradient(90deg, #000 44.23%, rgba(255, 187, 0, 0.594) 100%);
+    background-image: url(../images/gradient.png);
     font-family: alexa, Arial, Helvetica, sans-serif;
     overflow-x: hidden;
 }
@@ -95,7 +96,7 @@ ul {
     margin-top: 50px;
     margin-bottom: 150px;
 
-    color: #000;
+    color: #ffffff;
 
 text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
 -webkit-text-stroke-width: 0.3px;
@@ -109,7 +110,7 @@ line-height: normal;
 
   .blok1{
     height: 810px;
-background: linear-gradient(180deg, #FFF 41.5%, #000 30%);
+background: linear-gradient(180deg, #ffffff 41.5%, #000 30%);
   }
 
   
@@ -132,17 +133,17 @@ margin-bottom: 100px;
 
   h3{
     display: flex;
-    justify-content: center;
-text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    /* justify-content: center;
+text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25); */
 -webkit-text-stroke-width: 0.3px;
--webkit-text-stroke-color: #000;
+/* -webkit-text-stroke-color: #000; */
 font-family: "Abril Fatface";
 font-size: 90px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
 
-    background: linear-gradient(180deg, #000 59.13%, #FFF 63.94%);
+    /* background: linear-gradient(180deg, #000 59.13%, #ffffff 63.94%); */
 background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
@@ -151,18 +152,26 @@ margin-bottom: 150px;
 
 
   p{
-    color: var(--wit);
+    color: var(--groen);
     display: flex;
     justify-content: center;
     text-align: center;
     margin-top: 5px;
     margin-left: 50px;
     margin-right: 50px;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+-webkit-text-stroke-width: 0.3px;
+-webkit-text-stroke-color: #ffffff00;
+font-family: "Abril Fatface";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
   }
 
   footer {
-    width: 100%;
-    margin:auto;
+    /* width: 100%; */
+    margin: auto;
     text-align: center;
     margin-top: 10px;
     bottom: 0;

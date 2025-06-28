@@ -17,6 +17,8 @@
 
 body {
     background-color: var(--groen);
+    background-image: url(../images/posters.png);
+    background-repeat:initial;
     font-family: alexa, Arial, Helvetica, sans-serif;
     overflow-x: hidden;
 }
@@ -95,7 +97,7 @@ ul {
     margin-top: 50px;
     margin-bottom: 150px;
 
-    color: #000;
+    color: #ffffff;
 
 text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
 -webkit-text-stroke-width: 0.3px;
